@@ -120,6 +120,16 @@ function showPersonalDetails() {
     content.style.display = 'block';
 }
 
+function Realization() {
+    const content = document.getElementById('businessCaseContent');
+    content.innerHTML = `
+        <h3>Business Case Document</h3>
+        <p>You can download the document using the link below:</p>
+        <a href="https://apekshadambal.github.io/daa2/DAA.docx" target="_blank" class="button">Download Doc</a>
+    `;
+    content.style.display = 'block'; 
+}
+  
 function showSDGMapping() {
     const content = document.getElementById('content');
     content.innerHTML = `
@@ -674,11 +684,11 @@ function showCodeImplementation() {
 
     <div class="button-container">
         <button onclick="showCourseLearningReflections()">Course reflection</button>
-        <button onclick="showPersonalDetails()">Introduction</button>
         <button onclick="showBusinessCases()">Business Cases</button>
         <button onclick="showSDGMapping()">SDG Mapping</button>
         <button onclick="showCodeImplementation()">Code Implementation</button>
         <a href="https://apekshadambal.github.io/daa2/DAA.docx" target="_blank" class="button">Doc</a>
+        <button onclick="Realization()">Doc</button>
         
     </div>
 
