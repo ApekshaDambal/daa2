@@ -119,6 +119,194 @@ function showPersonalDetails() {
     `;
     content.style.display = 'block';
 }
+    
+    function renderBusinessCasesOverview() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h2>Understanding Our Business Cases</h2>
+
+        <h3>Computational Thinking</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Idea</th>
+                    <th>What it Means</th>
+                    <th>How We Can Use It</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Decomposition</td>
+                    <td>Break a big problem into smaller parts</td>
+                    <td>We can divide our projects into specific goals, like focusing on telemedicine or improving water quality.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pattern Recognition</td>
+                    <td>Spotting patterns that keep coming up</td>
+                    <td>We can look at how people use healthcare services to improve telemedicine.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Abstraction</td>
+                    <td>Keeping only the important information</td>
+                    <td>We can focus on key data, like patient outcomes and water usage.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Design Techniques</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Idea</th>
+                    <th>What it Means</th>
+                    <th>How We Can Use It</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Brute Force</td>
+                    <td>Trying every possible solution</td>
+                    <td>We can explore all options to find the best approach for our projects.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Divide and Conquer</td>
+                    <td>Splitting problems into smaller chunks</td>
+                    <td>We can start with pilot programs, like testing telemedicine in a small area before a full rollout.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Decrease and Conquer</td>
+                    <td>Reducing the size of the problem</td>
+                    <td>We can focus on a small community for our water conservation efforts first.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Transform and Conquer</td>
+                    <td>Changing how we look at the problem</td>
+                    <td>We can use dashboards to make data from our services easy to understand.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Dynamic Programming</td>
+                    <td>Using small solutions to build bigger ones</td>
+                    <td>We can use lessons from early healthcare programs to shape broader strategies.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Greedy Technique</td>
+                    <td>Making the best choice at each step</td>
+                    <td>We can prioritize features that will have the biggest impact on public services.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Space and Time Tradeoff</td>
+                    <td>Balancing speed and storage</td>
+                    <td>We can use cloud solutions to store healthcare data efficiently.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Backtracking</td>
+                    <td>Removing unnecessary options</td>
+                    <td>We can find the best resource allocation strategies in water management by pruning options.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Principles</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Idea</th>
+                    <th>What it Means</th>
+                    <th>How We Can Use It</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Brave and Cautious Travel</td>
+                    <td>Exploring until we reach the end</td>
+                    <td>We should fully understand urban healthcare needs before designing solutions.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pruning</td>
+                    <td>Cutting out what we don't need</td>
+                    <td>We can remove unnecessary features from our platforms to make them easier to use.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lazy Propagation</td>
+                    <td>Updating only when necessary</td>
+                    <td>We should only refresh data when new information comes in.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sliding Window</td>
+                    <td>Looking at a smaller view of data</td>
+                    <td>We can analyze monthly data to track water usage trends.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Level Order Traversal</td>
+                    <td>Going through data level by level</td>
+                    <td>We can gather feedback from different community levels on healthcare and governance.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Hierarchical Data and Trees</td>
+                    <td>Organizing information</td>
+                    <td>We can structure health records and public service data for easier access.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Edge Relaxation</td>
+                    <td>Picking the best connection</td>
+                    <td>We can optimize transportation routes for healthcare based on distance.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Balancing a Tree</td>
+                    <td>Making sure our data is balanced</td>
+                    <td>We should regularly assess and balance resource allocation across sectors.</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Kleene Closure</td>
+                    <td>Understanding connections</td>
+                    <td>We should ensure our healthcare services connect well with public health data systems.</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Pre-Computing</td>
+                    <td>Preparing results in advance</td>
+                    <td>We can analyze existing data to predict health trends and improve planning.</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Parental Dominance</td>
+                    <td>Keeping important data prioritized</td>
+                    <td>We should prioritize critical health metrics for quick access.</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Prefix and Suffix</td>
+                    <td>Creating categories</td>
+                    <td>We can use prefixes and suffixes to organize our public services and healthcare initiatives.</td>
+                </tr>
+            </tbody>
+        </table>
+    `;
+    content.style.display = 'block';
+}
 
 function Realization() {
     const content = document.getElementById('businessCaseContent');
@@ -689,7 +877,7 @@ function showCodeImplementation() {
         <button onclick="showCodeImplementation()">Code Implementation</button>
         <a href="https://apekshadambal.github.io/daa2/DAA.docx" target="_blank" class="button">Doc</a>
         <button onclick="Realization()">Doc</button>
-        
+        <button onclick="renderBusinessCasesOverview()">Checklist</button>
     </div>
 
     <div id="content"></div>
