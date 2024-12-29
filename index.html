@@ -308,6 +308,259 @@ function showPersonalDetails() {
     content.style.display = 'block';
 }
 
+function renderImplementationAnalysis() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h2>Implementation Analysis</h2>
+
+        <h3>Algorithm/Data Structure Used?</h3>
+        <table style="border-collapse: collapse; width: 100%;">
+            <thead>
+                <tr>
+                    <th style="padding: 12px; text-align: left;">Algorithm/Data Structure</th>
+                    <th style="padding: 12px; text-align: left;">Used? (Yes/No)</th>
+                    <th style="padding: 12px; text-align: left;">How and Where?</th>
+                    <th style="padding: 12px; text-align: left;">Space Efficiency</th>
+                    <th style="padding: 12px; text-align: left;">Time Efficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px;">Arrays</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used for storing project data and community records.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(1) access, O(n) for modifications</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Structures</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used to structure complex service data.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">List</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used to store dynamic data like patient feedback.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Stack</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used in current projects.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Queue</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used for managing task and patient queues.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(1)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Binary Tree</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used for hierarchical resource allocation.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(log n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Binary Search Tree</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">AVL Tree</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">2-3 Tree</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not applicable.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Red-Black Tree</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Trie</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Heap</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used for prioritizing resources and tasks.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(log n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Lookup Table</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used for fast data lookups, e.g., health statistics.</td>
+                    <td style="padding: 12px;">O(1)</td>
+                    <td style="padding: 12px;">O(1)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Sparse Table</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Fenwick Tree</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Segment Tree</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Skip List</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not applicable.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">null</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Union-Find</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used to group related services or community connections.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(α(n))</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Hashing</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">For quick access to healthcare data and services.</td>
+                    <td style="padding: 12px;">O(1)</td>
+                    <td style="padding: 12px;">O(1)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">DFS</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used for exploring networks or resources.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">BFS</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used for exploring connections in a resource graph.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Bubble Sort</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(n²)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Selection Sort</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(n²)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Insertion Sort</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(n²)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Quick Sort</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used for fast sorting of large datasets.</td>
+                    <td style="padding: 12px;">O(log n)</td>
+                    <td style="padding: 12px;">O(n log n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Merge Sort</td>
+                    <td style="padding: 12px;">Yes</td>
+                    <td style="padding: 12px;">Used for sorting large and complex data efficiently.</td>
+                    <td style="padding: 12px;">O(n)</td>
+                    <td style="padding: 12px;">O(n log n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Brute Force String Search</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(n*m)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Rabin Karp</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(n+m)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Boyer-Moore</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Knuth-Morris-Pratt</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Heap Sort</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(n log n)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Kruskal</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(E log V)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Prim</td>
+                    <td style="padding: 12px;">No</td>
+                    <td style="padding: 12px;">Not used.</td>
+                    <td style="padding: 12px;">null</td>
+                    <td style="padding: 12px;">O(E log V)</td>
+                </tr>
+            </tbody>
+        </table>
+    `;
+}
+
 function Realization() {
     const content = document.getElementById('businessCaseContent');
     content.innerHTML = `
@@ -877,7 +1130,8 @@ function showCodeImplementation() {
         <button onclick="showCodeImplementation()">Code Implementation</button>
         <a href="https://apekshadambal.github.io/daa2/DAA.docx" target="_blank" class="button">Doc</a>
         <button onclick="Realization()">Doc</button>
-        <button onclick="renderBusinessCasesOverview()">Checklist</button>
+        <button onclick="renderImplementationAnalysis()">Implementation Analysis</button>
+        <button onclick="renderBusinessCasesOverview()">Overview</button>
     </div>
 
     <div id="content"></div>
